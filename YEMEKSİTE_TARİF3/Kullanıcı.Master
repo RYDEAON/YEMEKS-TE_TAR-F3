@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanıcı.master.cs" Inherits="YEMEKSİTE_TARİF3.Kullanıcı" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            background-color: #6666FF;
+        }
+        .auto-style3 {
+            background-color: #99CCFF;
+        }
+        .auto-style4 {
+            background-color: #CC33FF;
+        }
+        .auto-style5 {
+            background-color: #6600FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height:150px; width:700px; margin-left:300px;" class="auto-style2">
+           
+        </div>
+        <div style="margin-left:300px; width:700px; height:20px;"></div>
+        <div style="margin-left:300px; width:700px; height:20px;" class="auto-style3"></div>
+        <div style="margin-left:300px; width:700px; height:20px;"></div>
+
+        <div style="margin-left:300px; width:200px; height:200px;" class="auto-style5">
+            <div style="margin-left:250px; height:350px;width:450px;" class="auto-style4">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+ </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
