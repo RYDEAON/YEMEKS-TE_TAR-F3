@@ -9,32 +9,57 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style2 {
-            background-color: #6666FF;
+            background-color: cadetblue;
         }
+
         .auto-style3 {
-            background-color: #99CCFF;
+            background-color: cadetblue;
+            width: 700px;
+            height: 25px;
         }
+
         .auto-style4 {
-            background-color: #CC33FF;
+            background-color: cadetblue;
         }
+
         .auto-style5 {
-            background-color: #6600FF;
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+        }
+
+        .auto-style6 {
+            width: 100%;
+        }
+
+        .auto-style8 {
+            text-align: center;
+            background-color: #FFFFFF;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="height:150px; width:700px; margin-left:300px;" class="auto-style2">
-           
+        <div style="height: 150px; width: 700px; margin-left: 300px;" class="auto-style2">
         </div>
-        <div style="margin-left:300px; width:700px; height:20px;"></div>
-        <div style="margin-left:300px; width:700px; height:20px;" class="auto-style3"></div>
-        <div style="margin-left:300px; width:700px; height:20px;"></div>
+        <div style="margin-left: 300px; width: 700px; height: 30px;"></div>
+        <div style="margin-left: 300px;" class="auto-style3">
+            <table class="auto-style6">
+                <tr>
+                    <td class="auto-style8"><strong><a href="AnaSayfa.aspx">ANA SAYFA</a></strong></td>
+                    <td class="auto-style8"><strong><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></strong></td>
+                    <td class="auto-style8"><strong><a href="TarifOner.aspx">TARİF ÖNER</a></strong></td>
+                    <td class="auto-style8"><strong><a href="Hakkimizda.aspx">HAKKIMIZDA</a></strong></td>
+                    <td class="auto-style8"><strong><a href="iletisim.aspx">İLETİŞİM</a></strong></td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
 
-        <div style="margin-left:300px; width:200px; height:200px;" class="auto-style5">
-            <div style="margin-left:250px; height:350px;width:450px;" class="auto-style4">
-                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
- </asp:ContentPlaceHolder>
+        <div style="margin-left: 300px;" class="auto-style5">
+            <div style="margin-left: 250px; height: 350px; width: 450px;" class="auto-style4">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
         </div>
     </form>
