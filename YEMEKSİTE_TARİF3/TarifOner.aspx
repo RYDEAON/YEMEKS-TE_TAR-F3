@@ -56,7 +56,7 @@
     <tr>
         <td class="auto-style11"><strong></strong></td>
         <td><strong><em>
-            <asp:Button ID="BtnTarifOner" runat="server" BackColor="#FFFFCC" CssClass="auto-style12" Height="40px" Text="Tarif Öner" Width="150px" />
+            <asp:Button ID="BtnTarifOner" runat="server" BackColor="#FFFFCC" CssClass="auto-style12" Height="40px" Text="Tarif Öner" Width="150px" OnClick="BtnTarifOner_Click" />
             </em></strong></td>
     </tr>
 </table>
