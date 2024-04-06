@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -13,7 +14,7 @@
         }
 
         .auto-style3 {
-            background-color: #ce7171;
+            background-color: #fff;
             width: 700px;
             height: 25px;
         }
@@ -24,7 +25,8 @@
 
         .auto-style9 {
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #ef9e9e;
+            height: 36px;
         }
         .auto-style10 {
             font-size: large;
@@ -36,7 +38,7 @@
         <div style="height: 150px; width: 700px; margin-left: 300px;" class="auto-style2">
         </div>
         <div style="margin-left: 300px; width: 700px; height: 30px;"></div>
-        <div style="margin-left: 300px;" class="auto-style3">
+        <div style="margin-left: 300px;height:40px" class="auto-style3">
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style9"><strong><a href="AnaSayfa.aspx">ANA SAYFA</a></strong></td>
@@ -57,8 +59,7 @@
                     <ItemTemplate>
                         <div style="border: thin solid #CCCCCC">
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
-                            &nbsp;(
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                            (<asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
                             )</div>
                     </ItemTemplate>
                 </asp:DataList>
