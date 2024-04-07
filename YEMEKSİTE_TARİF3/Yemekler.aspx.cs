@@ -10,6 +10,9 @@ namespace YEMEKSİTE_TARİF3
 	public partial class Yemekler : System.Web.UI.Page
 	{
 		sqlsinif bgl = new sqlsinif();
+		
+		string islem = "";
+		string id = "";
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			Panel2.Visible = false;
@@ -17,6 +20,10 @@ namespace YEMEKSİTE_TARİF3
 
 			if (Page.IsPostBack== false)
 			{
+
+				id = Request.QueryString["Yemekid"];
+				islem = Request.QueryString["islem"];
+
 				//Kategori Listesi
 				SqlCommand komut2 = new SqlCommand("Select* From Tbl_Kategoriler", bgl.baglanti());
 				SqlDataReader dr2 = komut2.ExecuteReader();
@@ -37,7 +44,14 @@ namespace YEMEKSİTE_TARİF3
 			DataList1.DataSource = dr;
 			DataList1.DataBind();
 
-			
+			if (islem =="sil")
+			{
+				SqlCommand komut2 = new SqlCommand("Delete  From Tbl_Yemekler where Yemekid=@p1",bgl.baglanti());
+				komut2.Parameters.AddWithValue("@p1", id);
+				komut2.ExecuteNonQuery();
+				bgl.baglanti().Close();
+
+			}
 		}
 
 		protected void Button1_Click(object sender, EventArgs e)
