@@ -68,8 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AnaSayfa.aspx" />
-    <Content Include="Banner Foto\Admin.aspx" />
+    <Content Include="Admin.aspx" />
     <Content Include="Banner Foto\images %282%29.jpeg" />
+    <Content Include="ikonlar\Delete.png" />
+    <Content Include="ikonlar\refresh-icon-27.png" />
+    <Content Include="ikonlar\REFRESH.jpeg" />
+    <Content Include="ikonlar\refreshh.png" />
+    <Content Include="Kategoriler.aspx" />
     <Content Include="Banner Foto\various-spices-and-herbs-website-header.jpg" />
     <Content Include="Banner Foto\İMGE.jpg" />
     <Content Include="GununYemegi.aspx" />
@@ -98,12 +103,19 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Banner Foto\Admin.aspx.cs">
+    <Compile Include="Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Banner Foto\Admin.aspx.designer.cs">
+    <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
     </Compile>
     <Compile Include="GununYemegi.aspx.cs">
       <DependentUpon>GununYemegi.aspx</DependentUpon>
