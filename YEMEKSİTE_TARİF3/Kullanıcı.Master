@@ -58,7 +58,9 @@
                 <asp:DataList ID="DataList1" runat="server" Width="200px">
                     <ItemTemplate>
                         <div style="border: thin solid #CCCCCC">
+                     <a href="KategoriDetay.aspx?Kategoriid=<%#Eval("Kategoriid")%>"> <strong>
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            </strong></a>
                             (<asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
                             )</div>
                     </ItemTemplate>
