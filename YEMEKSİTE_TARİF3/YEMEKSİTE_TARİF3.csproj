@@ -74,6 +74,7 @@
     <Content Include="ikonlar\refresh-icon-27.png" />
     <Content Include="ikonlar\REFRESH.jpeg" />
     <Content Include="ikonlar\refreshh.png" />
+    <Content Include="KategoriDuzenle.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="Banner Foto\various-spices-and-herbs-website-header.jpg" />
     <Content Include="Banner Foto\İMGE.jpg" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kategoriler.aspx.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
