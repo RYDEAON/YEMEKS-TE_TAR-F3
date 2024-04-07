@@ -71,7 +71,11 @@ namespace YEMEKSİTE_TARİF3
 			komut.ExecuteNonQuery();
 			bgl.baglanti().Close();
 
-		
+			//Kategori  Sayısını arttırma 
+			SqlCommand komut2 = new SqlCommand("update tbl_kategoriler set kategoriadet=kategoriadet+1 where kategoriid=@p1", bgl.baglanti());
+			komut2.Parameters.AddWithValue("@p1",DropDownList1.SelectedValue);
+			komut2.ExecuteNonQuery();
+			bgl.baglanti().Close();
 		}
 	}
 }
