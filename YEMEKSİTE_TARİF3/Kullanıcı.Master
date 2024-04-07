@@ -36,6 +36,7 @@
 <body>
     <form id="form1" runat="server">
         <div style="height: 150px; width: 700px; margin-left: 300px;" class="auto-style2">
+            <asp:Image ID="Image1" runat="server" Height="151px" ImageUrl="~/Banner Foto/various-spices-and-herbs-website-header.jpg" Width="701px" />
         </div>
         <div style="margin-left: 300px; width: 700px; height: 30px;"></div>
         <div style="margin-left: 300px;height:40px" class="auto-style3">
