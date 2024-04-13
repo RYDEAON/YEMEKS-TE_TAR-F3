@@ -81,7 +81,7 @@
                             <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/ikonlar/Delete.png" Width="30px" />
                         </td>
                         <td class="auto-style6">
-                           <a href="YorumDetay.aspx?Yorumid<%#Eval("Yorumid")%>" > <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/ikonlar/refresh-icon-27.png" Width="32px" />
+                           <a href="YorumDetay.aspx?Yorumid=<%#Eval("Yorumid")%>" > <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/ikonlar/refresh-icon-27.png" Width="32px" />
                        </a> </td>
                     </tr>
                 </table>

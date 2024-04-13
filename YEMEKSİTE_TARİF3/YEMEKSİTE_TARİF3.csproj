@@ -71,6 +71,7 @@
     <Content Include="Admin.aspx" />
     <Content Include="Banner Foto\images %282%29.jpeg" />
     <Content Include="ikonlar\Delete.png" />
+    <Content Include="ikonlar\reading-icon-png_265270.jpg" />
     <Content Include="ikonlar\refresh-icon-27.png" />
     <Content Include="ikonlar\REFRESH.jpeg" />
     <Content Include="ikonlar\refreshh.png" />
@@ -83,6 +84,7 @@
     <Content Include="iletisim.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="Mesajlar.aspx" />
     <Content Include="Resimler\images %281%29.jpeg" />
     <Content Include="Resimler\images.jpeg" />
     <Content Include="TarifOner.aspx" />
@@ -163,6 +165,13 @@
     </Compile>
     <Compile Include="Kullanıcı.Master.designer.cs">
       <DependentUpon>Kullanıcı.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlsinif.cs" />
