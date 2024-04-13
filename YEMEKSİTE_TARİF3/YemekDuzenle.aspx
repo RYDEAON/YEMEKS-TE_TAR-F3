@@ -12,9 +12,9 @@
             font-weight: bold;
             font-size: large;
         }
-        .auto-style8 {
-            font-weight: bold;
-        }
+    .auto-style8 {
+        font-weight: bold;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
