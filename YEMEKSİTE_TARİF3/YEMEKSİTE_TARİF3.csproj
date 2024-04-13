@@ -91,7 +91,10 @@
     <Content Include="MesajDetay.aspx" />
     <Content Include="Mesajlar.aspx" />
     <Content Include="Resimler\images %281%29.jpeg" />
+    <Content Include="Resimler\images %283%29.jpeg" />
+    <Content Include="Resimler\images %284%29.jpeg" />
     <Content Include="Resimler\images.jpeg" />
+    <Content Include="Resimler\köri.jpeg" />
     <Content Include="Tarifler.aspx" />
     <Content Include="TarifOner.aspx" />
     <Content Include="TarifOnerDetay.aspx" />

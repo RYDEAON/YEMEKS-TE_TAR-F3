@@ -12,14 +12,14 @@
             font-size: x-large;
         }
         .auto-style11 {
-            font-weight: bold;
-        }
-        .auto-style12 {
-            text-align: center;
-        }
-        .auto-style13 {
-            font-size: medium;
-        }
+        font-weight: bold;
+    }
+    .auto-style12 {
+        text-align: center;
+    }
+    .auto-style13 {
+        font-size: medium;
+    }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -49,5 +49,5 @@
                     </strong></td>
             </tr>
         </table>
-    </asp:Panel>
+</asp:Panel>
 </asp:Content>

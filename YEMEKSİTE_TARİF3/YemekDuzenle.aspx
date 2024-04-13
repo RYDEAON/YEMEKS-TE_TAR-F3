@@ -15,6 +15,12 @@
     .auto-style8 {
         font-weight: bold;
     }
+        .auto-style9 {
+            text-align: right;
+        }
+        .auto-style10 {
+            text-align: left;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -46,6 +52,12 @@
             <td>
                 <asp:DropDownList ID="DropDownList1" runat="server" Width="250px">
                 </asp:DropDownList>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style9"><strong>Resim Ekle</strong></td>
+            <td class="auto-style10">
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
             </td>
         </tr>
         <tr>
