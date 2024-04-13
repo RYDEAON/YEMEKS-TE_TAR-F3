@@ -48,8 +48,8 @@
                         <asp:Label ID="Label1" runat="server" CssClass="auto-style8" Text='<%# Eval("MesajGonderen") %>'></asp:Label>
                     </td>
                     <td class="auto-style12">
-                      <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/ikonlar/reading-icon-png_265270.jpg" Width="32px" />
-                   </td>
+                 <a href="MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>"><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/ikonlar/reading-icon-png_265270.jpg" Width="32px" />
+                  </a> </td>
                 </tr>
             </table>
         </ItemTemplate>
