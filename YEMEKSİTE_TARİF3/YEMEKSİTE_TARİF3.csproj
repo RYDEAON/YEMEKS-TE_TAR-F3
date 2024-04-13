@@ -70,7 +70,9 @@
     <Content Include="AnaSayfa.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="Banner Foto\images %282%29.jpeg" />
+    <Content Include="GununYemegiAdmin.aspx" />
     <Content Include="ikonlar\Delete.png" />
+    <Content Include="ikonlar\images.png" />
     <Content Include="ikonlar\reading-icon-png_265270.jpg" />
     <Content Include="ikonlar\refresh-icon-27.png" />
     <Content Include="ikonlar\REFRESH.jpeg" />
@@ -116,6 +118,13 @@
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GununYemegiAdmin.aspx.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GununYemegiAdmin.aspx.designer.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="KategoriDuzenle.aspx.cs">
       <DependentUpon>KategoriDuzenle.aspx</DependentUpon>

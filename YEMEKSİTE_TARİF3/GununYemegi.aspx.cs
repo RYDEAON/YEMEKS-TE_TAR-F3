@@ -12,7 +12,7 @@ namespace YEMEKSİTE_TARİF3
 		sqlsinif bgl = new sqlsinif();
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			SqlCommand komut=new SqlCommand("Select * From Tbl_GununYemegi",bgl.baglanti());
+			SqlCommand komut=new SqlCommand("Select * From Tbl_Yemekler WHERE durum=1",bgl.baglanti());
 			SqlDataReader oku = komut.ExecuteReader();
 			DataList2.DataSource=oku;
 			DataList2.DataBind();
