@@ -71,6 +71,7 @@
     <Content Include="Admin.aspx" />
     <Content Include="Banner Foto\images %282%29.jpeg" />
     <Content Include="GununYemegiAdmin.aspx" />
+    <Content Include="HakkimizdaAdmin.aspx" />
     <Content Include="ikonlar\Delete.png" />
     <Content Include="ikonlar\images %281%29.png" />
     <Content Include="ikonlar\images.png" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="GununYemegiAdmin.aspx.designer.cs">
       <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HakkimizdaAdmin.aspx.cs">
+      <DependentUpon>HakkimizdaAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HakkimizdaAdmin.aspx.designer.cs">
+      <DependentUpon>HakkimizdaAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="KategoriDuzenle.aspx.cs">
       <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
