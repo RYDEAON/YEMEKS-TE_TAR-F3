@@ -33,7 +33,36 @@ namespace YEMEKSİTE_TARİF3
 					TextBox5.Text = dr[6].ToString();
 				}
 				bgl.baglanti().Close();
+
+				//Kategori Listesi
+				SqlCommand komut2 = new SqlCommand("Select * From Tbl_Kategoriler", bgl.baglanti());
+				SqlDataReader dr2 = komut2.ExecuteReader();
+
+				DropDownList1.DataTextField = "KategoriAd";
+				DropDownList1.DataValueField = "Kategoriid";
+
+				DropDownList1.DataSource = dr2;
+				DropDownList1.DataBind();
 			}
+		}
+
+		protected void Button1_Click(object sender, EventArgs e)
+		{
+
+			// Güncelleme
+			SqlCommand komut = new SqlCommand("Update Tbl_Tarifler set TarifDurum=1 where tarifid=@p1", bgl.baglanti());
+			komut.Parameters.AddWithValue("@p1", id);
+			komut.ExecuteNonQuery();
+			bgl.baglanti().Close();
+
+			//Yemeği AnaSayfaya Ekleme
+			SqlCommand komut2 = new SqlCommand("insert into tbl_yemekler(YemekAd,YemekMalzeme,YemekTarif,Kategoriid) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
+			komut2.Parameters.AddWithValue("@p1", TextBox1.Text);
+			komut2.Parameters.AddWithValue("@p2", TextBox2.Text);
+			komut2.Parameters.AddWithValue("@p3", TextBox3.Text);
+			komut2.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+			komut2.ExecuteNonQuery();
+			bgl.baglanti().Close();
 		}
 	}
 }
